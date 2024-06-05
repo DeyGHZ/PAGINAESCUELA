@@ -5,21 +5,24 @@
         .logo{
             display: flex;
             justify-content: flex-start;
-            padding-bottom: 10px;
-            padding-top: 10px;
+            padding-bottom: 50px;    
+            padding-top: 50px;
+            padding-left: 50px;
         }
         .border{
             border: 1px solid black;
             border-width:0px 0px 1px 0px;
         }
         .fondo{
-            background: url(fiesta.jpg)50%/cover no-repeat;
-            padding-left: 50px;
+            background: url(https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg)50%/cover no-repeat;
+            padding-left: 20px;
             color: white;
             text-transform: uppercase;
-            padding-bottom: 50px;
-            padding-top: 50px;
-        }
+            padding-bottom: 200px;
+            padding-top: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+              }
         .nav{
             justify-content: flex-end;
             display: flex;
@@ -27,10 +30,21 @@
             padding-top: 1px;
         }
         .nav a{
-            color: chocolate;
+            color: darkgoldenrod;
             text-decoration: none;
             margin-left: 10px;
         }
+        .mayor{
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            color: chocolate;
+        }
+        #texto{
+            text-align: center;
+            font-weight: bold;
+        }
+               
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,17 +54,20 @@
 </head>
 <body>
     <header>
-        <div>
-            <div class="logo, border">
+        <div class="logo">
+             <div>
                 <img src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/assets/images/logo.svg" alt="Logo Gobierno de la Ciudad de México">
             </div>
+            <hr/>
         </div>
+        <hr />
         <div>
             <nav class="nav">
                 <a href="" target="_blank"> Residentes</a>
                 <a href="" target="_blank"> Negocios</a>
                 <a href="" target="_blank"> Visitantes</a>
                 <a href="" target="_blank"> Gobierno</a>
+                <br>
             </nav>
         </div>
     </header>
@@ -58,22 +75,26 @@
 
     <h1 class="fondo">
         <div>
-            <span> > APRENDE A PROGRAMAR</span>
+            <span> >APRENDE A PROGRAMAR</span>
+            <br>
             <span> EN LAS</span>
             <span> ESCUELAS</span>
-            <span> DE CODIGO</span>
+            <br>
+            <span> DECÓDIGO</span>
+            <br>
             <span> DE LA CDMX</span>
          </div>
     </h1>
   </section>
+  <br>
   <section>
-    <h2> ¿Quién se puede inscribir?</h2>
-    <p><b><strong>Cualquier persona que quiera aprender a programar código y cuente con 4-8 horas disponibles a la semana.</strong></b>
-	
+    <h2 class="mayor"> ¿Quién se puede inscribir?</h2>
+    <p id="texto">
+       <strong>Cualquier persona que quiera aprender a programar código y cuente con 4-8 horas disponibles a la semana.</strong>
     </p>
-    <p><b><strong> *Menores de edad deberán entrar a las instalaciones acompañados de un adulto</strong></b>
-	
-    </p>
+    <p style="text-align: center;">
+       <strong> *Menores de edad deberán entrar a las instalaciones acompañados de un adulto</strong>
+	</p>
   </section>  
 </body>
 </html>
